@@ -1,8 +1,10 @@
 package main
 
-import "fmt"
-import "learngo/helloWorld"
-import "learngo/integers"
+import (
+	"fmt"
+	"learngo/helloWorld"
+	"learngo/integers"
+)
 
 func main() {
 	fmt.Println(helloWorld.Hello("Oskar", "Spanish"))
