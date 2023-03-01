@@ -1,13 +1,13 @@
 package main
 
 import (
-	"fmt"
-	"learngo/helloWorld"
-	"learngo/integers"
+	"learngo/mocking"
+	"os"
 )
 
 func main() {
-	fmt.Println(helloWorld.Hello("Oskar", "Spanish"))
-	fmt.Println(integers.Add(2,2))
+	s := &mocking.DefaultSleeper{}
+	
+	mocking.Countdown(os.Stdout, s)
 
 }
