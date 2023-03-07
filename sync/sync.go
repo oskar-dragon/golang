@@ -7,7 +7,7 @@ type Counter struct{
 	count int
 }
 
-func NewCounter() *Counter {
+func CreateCounter() *Counter{
 	return &Counter{}
 }
 
@@ -17,8 +17,6 @@ func (c *Counter) Value() int {
 	return c.count
 }
 
-func (c *Counter) Inc() {
-	c.mutex.Lock()
+func (c *Counter) Increment() {
 	c.count++
-	c.mutex.Unlock()
 }
